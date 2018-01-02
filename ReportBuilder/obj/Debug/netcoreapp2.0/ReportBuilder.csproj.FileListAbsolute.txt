@@ -1,0 +1,11 @@
+c:\users\can.perk\documents\visual studio 2017\Projects\ReportBuilder\ReportBuilder\bin\Debug\netcoreapp2.0\ReportBuilder.deps.json
+c:\users\can.perk\documents\visual studio 2017\Projects\ReportBuilder\ReportBuilder\bin\Debug\netcoreapp2.0\ReportBuilder.runtimeconfig.json
+c:\users\can.perk\documents\visual studio 2017\Projects\ReportBuilder\ReportBuilder\bin\Debug\netcoreapp2.0\ReportBuilder.runtimeconfig.dev.json
+c:\users\can.perk\documents\visual studio 2017\Projects\ReportBuilder\ReportBuilder\bin\Debug\netcoreapp2.0\ReportBuilder.dll
+c:\users\can.perk\documents\visual studio 2017\Projects\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.csprojResolveAssemblyReference.cache
+c:\users\can.perk\documents\visual studio 2017\Projects\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.csproj.CoreCompileInputs.cache
+c:\users\can.perk\documents\visual studio 2017\Projects\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.AssemblyInfoInputs.cache
+c:\users\can.perk\documents\visual studio 2017\Projects\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.AssemblyInfo.cs
+c:\users\can.perk\documents\visual studio 2017\Projects\ReportBuilder\ReportBuilder\bin\Debug\netcoreapp2.0\ReportBuilder.pdb
+c:\users\can.perk\documents\visual studio 2017\Projects\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.dll
+c:\users\can.perk\documents\visual studio 2017\Projects\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.pdb
