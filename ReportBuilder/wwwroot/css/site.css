@@ -1,35 +1,39 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿#logo-group > span {
+    display: inline-block;
+    height: 39px;
+    float: left;
+    color: #FFF;
+    font-size: 18px;
 }
-
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.container.fixed-header #header {
+    max-width: 1168px;
 }
-
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+.login-info a:hover {
+    color: #33455A;
 }
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
+.container.fixed-page-footer .page-footer {
+    max-width: 1168px;
 }
-
-/* QR code generator */
-#qrCode {
-    margin: 15px;
+.templateContainer {
+    position: absolute;
+    right: 250px;
+    left: 10px;
+    top: 10px;
+    bottom: 20px;
+    height: 800px;
+    background-color: #f6f4b7;
 }
-
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
+.templateContainer .sheet{
+    position:absolute;
+    top:10px;
+    bottom:10px;
+    left:10px;
+    right:10px;
+    background-color: #FFF;
+}
+.toolBox {
+    position: absolute;
+    width: 220px;
+    right: 20px;
+    height: 800px;
 }
