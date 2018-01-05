@@ -3,8 +3,10 @@
 }
 
 <div class="templateContainer">
-    <div class="sheet">
+    <div class="rulerContainer">
+        <div class="sheet">
 
+        </div>
     </div>
 </div>
 <div class="toolBox">
@@ -19,3 +21,16 @@
         </div>
     </div>
 </div>
+
+@section scripts{ 
+<script>
+        $(function() {
+                $('.rulerContainer').ruler({
+                vRuleSize: 25,
+                hRuleSize: 25,
+                showCrosshair : true,
+                showMousePos: true
+                });
+            });
+</script>
+}

@@ -23,14 +23,14 @@
     height: 800px;
     background-color: #f6f4b7;
 }
-.templateContainer .sheet{
-    position:absolute;
-    top:10px;
-    bottom:10px;
-    left:10px;
-    right:10px;
-    background-color: #FFF;
-}
+    .templateContainer .sheet {
+        position: absolute;
+        top: 25px;
+        bottom: 0px;
+        left: 25px;
+        right: 0px;
+        background-color: #FFF;
+    }
 .toolBox {
     position: absolute;
     width: 220px;
