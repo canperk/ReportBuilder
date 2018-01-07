@@ -1,0 +1,14 @@
+﻿{
+  "compilerOptions": {
+    "outDir": "./wwwroot/dist/ts",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5"
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

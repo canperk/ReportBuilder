@@ -2,35 +2,4 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="templateContainer">
-    <div class="rulerContainer">
-        <div class="sheet">
 
-        </div>
-    </div>
-</div>
-<div class="toolBox">
-    <div class="jarviswidget jarviswidget-sortable" style="" role="widget">
-        <header role="heading">
-            <h2>Report Settings</i></h2>
-        </header>
-        <div role="content" style="height:767px">
-            <div class="widget-body">
-
-            </div>
-        </div>
-    </div>
-</div>
-
-@section scripts{ 
-<script>
-        $(function() {
-                $('.rulerContainer').ruler({
-                vRuleSize: 25,
-                hRuleSize: 25,
-                showCrosshair : true,
-                showMousePos: true
-                });
-            });
-</script>
-}

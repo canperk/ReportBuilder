@@ -14,9 +14,9 @@ E:\Git\ReportBuilder\ReportBuilder\bin\Debug\netcoreapp2.0\ReportBuilder.runtime
 E:\Git\ReportBuilder\ReportBuilder\bin\Debug\netcoreapp2.0\ReportBuilder.runtimeconfig.dev.json
 E:\Git\ReportBuilder\ReportBuilder\bin\Debug\netcoreapp2.0\ReportBuilder.dll
 E:\Git\ReportBuilder\ReportBuilder\bin\Debug\netcoreapp2.0\ReportBuilder.pdb
-E:\Git\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.csprojResolveAssemblyReference.cache
 E:\Git\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.csproj.CoreCompileInputs.cache
 E:\Git\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.AssemblyInfoInputs.cache
 E:\Git\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.AssemblyInfo.cs
 E:\Git\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.dll
 E:\Git\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.pdb
+E:\Git\ReportBuilder\ReportBuilder\obj\Debug\netcoreapp2.0\ReportBuilder.csprojResolveAssemblyReference.cache
