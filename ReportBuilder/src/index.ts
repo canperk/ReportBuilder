@@ -14,17 +14,30 @@ const router = new VueRouter({
         { path: '/bar/:id', name: 'bar', component: Bar }
     ]
 })
-
 new Vue({
     router,
     template: `
-    <div id="app">
-      <ul>
-        <li><router-link :to="{ name: 'home' }">home</router-link></li>
-        <li><router-link :to="{ name: 'foo' }">foo</router-link></li>
-        <li><router-link :to="{ name: 'bar', params: { id: 123 }}">bar</router-link></li>
-      </ul>
-      <router-view class="view"></router-view>
+     <div class="navMenu">
+        <ul class="mainMenu">
+            <li>
+                <router-link :to="{ name: 'home' }"><i class="fa fa-pencil-square-o"></i>Templates</router-link>
+            </li>
+            <li>
+                <router-link :to="{ name: 'foo' }"><i class="fa fa-database"></i>Data Sources</router-link>
+            </li>
+            <li>
+                <router-link :to="{ name: 'bar', params: { id: 123 } }"><i class="fa fa-download"></i>Downloads</router-link>
+            </li>
+            <li>
+                <router-link :to="{ name: 'home' }"><i class="fa fa-wrench"></i>Preferences</router-link>
+            </li>
+        </ul>
     </div>
   `
-}).$mount('#mainContainer')
+}).$mount('.navMenu');
+new Vue({
+    router,
+    template: `<div id="mainContainer"> 
+                    <router-view class="view"></router-view> 
+               </div>`
+}).$mount('#mainContainer');

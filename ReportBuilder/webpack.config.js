@@ -2,7 +2,9 @@
 var webpack = require('webpack')
 
 module.exports = {
-    entry: { main: './src/index.ts' },
+    entry: {
+        main: './src/index.ts'
+    },
     output: {
         path: path.resolve(__dirname, './wwwroot/dist'),
         publicPath: './wwwroot/dist/',
@@ -51,25 +53,7 @@ module.exports = {
         hints: false
     },
     devtool: '#eval-source-map',
-    plugins:[]
-}
-
-if (process.env.NODE_ENV === 'production') {
-    module.exports.devtool = '#source-map'
-    module.exports.plugins = (module.exports.plugins || []).concat([
-        new webpack.DefinePlugin({
-            'process.env': {
-                NODE_ENV: '"production"'
-            }
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            compress: {
-                warnings: false
-            }
-        }),
-        new webpack.LoaderOptionsPlugin({
-            minimize: true
-        })
-    ])
+    plugins: [
+        
+    ]
 }

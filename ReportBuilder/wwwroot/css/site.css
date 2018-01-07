@@ -79,7 +79,7 @@ body {
         list-style: none;
         padding-left: 0px;
         margin: 0px;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
         .navMenu .mainMenu li {
@@ -90,9 +90,14 @@ body {
             padding-top: 10px;
         }
 
+            .navMenu .mainMenu li a {
+                color: #FFF;
+                text-decoration: none;
+            }
+
             .navMenu .mainMenu li .fa {
                 margin-right: 10px;
-                font-size:20px;
+                font-size: 20px;
             }
 
             .navMenu .mainMenu li:hover {

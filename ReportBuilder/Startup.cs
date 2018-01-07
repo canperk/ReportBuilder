@@ -30,8 +30,7 @@ namespace ReportBuilder
                 app.UseDeveloperExceptionPage();
                 app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
                 {
-                    HotModuleReplacement = true,
-                    HotModuleReplacementEndpoint = "/dist/__webpack_hmr"
+                    HotModuleReplacement = true
                 });
             }
             
