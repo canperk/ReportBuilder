@@ -4746,6 +4746,20 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "ReportBuilder.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1"
+        },
+        "compile": {
+          "bin/placeholder/ReportBuilder.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReportBuilder.Entities.dll": {}
+        }
       }
     }
   },
@@ -12525,13 +12539,18 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "ReportBuilder.Entities/1.0.0": {
+      "type": "project",
+      "path": "../ReportBuilder.Entities/ReportBuilder.Entities.csproj",
+      "msbuildProject": "../ReportBuilder.Entities/ReportBuilder.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.3",
-      "Microsoft.AspNetCore.SpaServices >= 2.0.1",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "ReportBuilder.Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12545,11 +12564,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\Git\\ReportBuilder\\ReportBuilder\\ReportBuilder.csproj",
-      "projectName": "ReportBuilder",
-      "projectPath": "E:\\Git\\ReportBuilder\\ReportBuilder\\ReportBuilder.csproj",
+      "projectUniqueName": "E:\\Git\\ReportBuilder\\ReportBuilder.Api\\ReportBuilder.Api.csproj",
+      "projectName": "ReportBuilder.Api",
+      "projectPath": "E:\\Git\\ReportBuilder\\ReportBuilder.Api\\ReportBuilder.Api.csproj",
       "packagesPath": "C:\\Users\\can.perk\\.nuget\\packages\\",
-      "outputPath": "E:\\Git\\ReportBuilder\\ReportBuilder\\obj\\",
+      "outputPath": "E:\\Git\\ReportBuilder\\ReportBuilder.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -12569,7 +12588,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Git\\ReportBuilder\\ReportBuilder.Entities\\ReportBuilder.Entities.csproj": {
+              "projectPath": "E:\\Git\\ReportBuilder\\ReportBuilder.Entities\\ReportBuilder.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -12584,10 +12607,6 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.3, )"
-          },
-          "Microsoft.AspNetCore.SpaServices": {
-            "target": "Package",
-            "version": "[2.0.1, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",

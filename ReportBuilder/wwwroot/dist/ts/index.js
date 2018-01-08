@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Hello from './hello';
 Vue.use(VueRouter);
 var Home = { template: '<div>This is Home</div>' };
 var Foo = { template: '<div>This is Foo</div>' };
@@ -9,11 +10,16 @@ var router = new VueRouter({
     routes: [
         { path: '/', name: 'home', component: Home },
         { path: '/foo', name: 'foo', component: Foo },
-        { path: '/bar/:id', name: 'bar', component: Bar }
+        { path: '/bar/:id', name: 'bar', component: Bar },
+        { path: '/hello', name: 'hello', component: Hello }
     ]
 });
 new Vue({
     router: router,
-    template: "\n    <div id=\"app\">\n      <ul>\n        <li><router-link :to=\"{ name: 'home' }\">home</router-link></li>\n        <li><router-link :to=\"{ name: 'foo' }\">foo</router-link></li>\n        <li><router-link :to=\"{ name: 'bar', params: { id: 123 }}\">bar</router-link></li>\n      </ul>\n      <router-view class=\"view\"></router-view>\n    </div>\n  "
+    template: "\n     <div class=\"navMenu\">\n        <ul class=\"mainMenu\">\n            <li>\n                <router-link :to=\"{ name: 'home' }\"><i class=\"fa fa-pencil-square-o\"></i>Templates</router-link>\n            </li>\n            <li>\n                <router-link :to=\"{ name: 'foo' }\"><i class=\"fa fa-database\"></i>Data Sources</router-link>\n            </li>\n            <li>\n                <router-link :to=\"{ name: 'bar', params: { id: 123 } }\"><i class=\"fa fa-download\"></i>Downloads</router-link>\n            </li>\n            <li>\n                <router-link :to=\"{ name: 'hello' }\"><i class=\"fa fa-wrench\"></i>Preferences</router-link>\n            </li>\n        </ul>\n    </div>\n  "
+}).$mount('.navMenu');
+new Vue({
+    router: router,
+    template: "<div id=\"mainContainer\"> \n                    <router-view class=\"view\"></router-view> \n               </div>"
 }).$mount('#mainContainer');
 //# sourceMappingURL=index.js.map

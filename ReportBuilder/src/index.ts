@@ -1,5 +1,6 @@
 ﻿import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Hello from './hello'
 
 Vue.use(VueRouter)
 const Home = { template: '<div>This is Home</div>' }
@@ -11,7 +12,8 @@ const router = new VueRouter({
     routes: [
         { path: '/', name: 'home', component: Home },
         { path: '/foo', name: 'foo', component: Foo },
-        { path: '/bar/:id', name: 'bar', component: Bar }
+        { path: '/bar/:id', name: 'bar', component: Bar },
+        { path: '/hello', name: 'hello', component: Hello, props: { name: 'Can PERK', initialEnthusiasm : 2 } }
     ]
 })
 new Vue({
@@ -29,7 +31,7 @@ new Vue({
                 <router-link :to="{ name: 'bar', params: { id: 123 } }"><i class="fa fa-download"></i>Downloads</router-link>
             </li>
             <li>
-                <router-link :to="{ name: 'home' }"><i class="fa fa-wrench"></i>Preferences</router-link>
+                <router-link :to="{ name: 'hello' }"><i class="fa fa-wrench"></i>Preferences</router-link>
             </li>
         </ul>
     </div>
