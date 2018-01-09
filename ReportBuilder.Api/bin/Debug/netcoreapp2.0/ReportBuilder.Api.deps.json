@@ -21,17 +21,17 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "ReportBuilder/1.0.0": {
+      "ReportBuilder.Api/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.3",
-          "Microsoft.AspNetCore.SpaServices": "2.0.1",
-          "Microsoft.NETCore.App": "2.0.0"
+          "Microsoft.NETCore.App": "2.0.0",
+          "ReportBuilder.Entities": "1.0.0"
         },
         "runtime": {
-          "ReportBuilder.dll": {}
+          "ReportBuilder.Api.dll": {}
         },
         "compile": {
-          "ReportBuilder.dll": {}
+          "ReportBuilder.Api.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -3795,6 +3795,18 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "ReportBuilder.Entities/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1"
+        },
+        "runtime": {
+          "ReportBuilder.Entities.dll": {}
+        },
+        "compile": {
+          "ReportBuilder.Entities.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.0.0",
@@ -3974,7 +3986,7 @@
     }
   },
   "libraries": {
-    "ReportBuilder/1.0.0": {
+    "ReportBuilder.Api/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -5980,6 +5992,11 @@
       "sha512": "sha512-W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
+    },
+    "ReportBuilder.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.NETCore.App/2.0.0": {
       "type": "package",

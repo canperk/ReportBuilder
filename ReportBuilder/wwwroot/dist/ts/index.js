@@ -11,7 +11,7 @@ var router = new VueRouter({
         { path: '/', name: 'home', component: Home },
         { path: '/foo', name: 'foo', component: Foo },
         { path: '/bar/:id', name: 'bar', component: Bar },
-        { path: '/hello', name: 'hello', component: Hello }
+        { path: '/hello', name: 'hello', component: Hello, props: { name: 'Can PERK', initialEnthusiasm: 2 } }
     ]
 });
 new Vue({

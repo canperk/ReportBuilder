@@ -16,7 +16,7 @@ export default Vue.extend({
     },
     computed: {
         exclamationMarks: function () {
-            return Array(this.enthusiasm + 1).join('!');
+            return new Array(this.enthusiasm + 1).join('!');
         }
     },
     template: "\n    <div>\n        <div class=\"greeting\">Hello {{name}}{{exclamationMarks}}</div>\n        <button @click=\"decrement\">-</button>\n        <button @click=\"increment\">+</button>\n    </div>"
