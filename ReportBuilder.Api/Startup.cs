@@ -28,7 +28,7 @@ namespace ReportBuilder.Api
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
         }
     }
