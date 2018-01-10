@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ReportBuilder.Entities;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace ReportBuilder.Api
 {
@@ -20,6 +21,10 @@ namespace ReportBuilder.Api
         {
             services.AddMvc();
             services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Northwind")));
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "Report Builder API", Version = "v1" });
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -28,6 +33,12 @@ namespace ReportBuilder.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Report Builder API");
+            });
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
         }
