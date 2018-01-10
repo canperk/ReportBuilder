@@ -3,11 +3,15 @@
     "outDir": "./wwwroot/dist/ts",
     "sourceMap": true,
     "strict": true,
-    "noImplicitReturns": true,
     "module": "es2015",
     "moduleResolution": "node",
-    "target": "es5"
+    "target": "es5",
+    "experimentalDecorators": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "suppressImplicitAnyIndexErrors": true
   },
+  "compileOnSave": false,
   "include": [
     "./src/**/*"
   ]

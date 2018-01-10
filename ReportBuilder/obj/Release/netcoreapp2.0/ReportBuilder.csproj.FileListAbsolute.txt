@@ -1,0 +1,1 @@
+E:\Git\ReportBuilder\ReportBuilder\obj\Release\netcoreapp2.0\ReportBuilder.csprojResolveAssemblyReference.cache

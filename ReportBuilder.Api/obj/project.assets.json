@@ -8040,7 +8040,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.1": {
-      "sha512": "ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
+      "sha512": "rWdxqBu6tvL0Q8pTyRHHz6gY/fuKLaXoinBeypGmCMs903i76xUgUvzryDeB23O+YOh4g/ZNB0HvFEF7uoNqJw==",
       "type": "package",
       "path": "newtonsoft.json/10.0.1",
       "files": [
