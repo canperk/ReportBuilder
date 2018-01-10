@@ -1,12 +1,14 @@
 ﻿<template>
-    <div class="mainProperties">
+    <div class="pageContainer">
+        <div class="mainProperties">
 
-    </div>
-    <div class="rulerContainer">
-        {{title}}
-    </div>
-    <div class="workPanel">
+        </div>
+        <div class="rulerContainer">
+            {{title}}
+        </div>
+        <div class="workPanel">
 
+        </div>
     </div>
 </template>
 <script lang="ts">
