@@ -47,7 +47,7 @@ body {
 }
 
     .footer .footerMenu {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 60px;
         margin-left: 15px;
     }
@@ -88,6 +88,7 @@ body {
             cursor: pointer;
             padding-left: 10px;
             padding-top: 10px;
+            font-size:14px;
         }
 
             .navMenu .mainMenu li a {
@@ -97,7 +98,7 @@ body {
 
             .navMenu .mainMenu li .fa {
                 margin-right: 10px;
-                font-size: 20px;
+                font-size: 14px;
             }
 
             .navMenu .mainMenu li:hover {
@@ -107,7 +108,7 @@ body {
 #content {
     position: relative;
     margin-left: 200px;
-    margin-top: 50px;
+    margin-top: 30px;
     color: #2f2828;
     z-index: 1;
     padding: 5px;

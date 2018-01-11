@@ -21,10 +21,12 @@
     "vue": "^2.5.2",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^6.0.0",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "jquery": "^3.2.1"
   },
   "devDependencies": {
     "@types/requirejs": "^2.1.31",
+    "@types/jquery": "2.0.47",
     "aspnet-webpack": "^2.0.1",
     "css-loader": "^0.28.1",
     "ts-loader": "^2.0.3",

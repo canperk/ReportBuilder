@@ -1,6 +1,7 @@
 ﻿import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+
 Vue.use(VueRouter)
 const Home = { template: '<div>This is Home</div>' }
 const Bar = { template: '<div>This is Bar {{ $route.params.id }}</div>' }
