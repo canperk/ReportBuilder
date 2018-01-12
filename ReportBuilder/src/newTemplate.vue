@@ -103,7 +103,6 @@
 </template>
 <script lang="ts">
     import Vue from "vue";
-    import * as $ from "jquery"
     var newTemplate = Vue.extend({
         props: ["title"]
     });
@@ -263,4 +262,10 @@
         };
 
     })(jQuery);
+    $(document).ready(function () {
+        $('#ribbon').ribbon();
+        $('.ribbon-button').click(function () {
+
+        });
+    });
 </script>

@@ -1,6 +1,6 @@
 ﻿import Vue from 'vue'
 import VueRouter from 'vue-router'
-
+import * as $ from 'jquery'
 
 Vue.use(VueRouter)
 const Home = { template: '<div>This is Home</div>' }
@@ -10,7 +10,7 @@ const router = new VueRouter({
     routes: [
         { path: '/', name: 'home', component: Home },
         { path: '/bar/:id', name: 'bar', component: Bar },
-        { path: '/hello', name: 'hello', component: require("./hello.vue"), props: { name: 'Can PERK', initialEnthusiasm: 2 } },
+        { path: '/hello', name: 'hello', component: require("./hello.vue"), props: { name: 'Gülsüm Ceylan', initialEnthusiasm: 1 } },
         { path: '/newTemplate', name: 'newTemplate', component: require("./newTemplate.vue"), props: { title: 'Create Template' } }
     ]
 })
@@ -38,6 +38,8 @@ new Vue({
 new Vue({
     router,
     template: `<div id="mainContainer"> 
-                    <router-view class="view"></router-view> 
+                    <transition name="fade" mode="out-in">
+                        <router-view class="view"></router-view> 
+                    </transition>
                </div>`
 }).$mount('#mainContainer');

@@ -1,4 +1,4 @@
-﻿; (function () {
+﻿;(function () {
     window.onscroll = function () {
         var content = document.getElementById("content");
         var navMenu = document.getElementsByClassName("navMenu")[0];
