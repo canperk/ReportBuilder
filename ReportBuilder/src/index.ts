@@ -1,6 +1,18 @@
 ﻿import Vue from 'vue'
 import VueRouter from 'vue-router'
-import * as $ from 'jquery'
+
+declare global {
+    interface Window {
+        $: any;
+        jQuery: any;
+    }
+    interface JQuery {
+        ribbon(): void;
+    }
+}
+
+window.$ = window.jQuery = require("jquery");
+window.$.fn.ribbon = undefined;
 Vue.use(VueRouter)
 const Home = { template: '<div>This is Home</div>' }
 const Bar = { template: '<div>This is Bar {{ $route.params.id }}</div>' }
@@ -10,7 +22,7 @@ const router = new VueRouter({
         { path: '/', name: 'home', component: Home },
         { path: '/bar/:id', name: 'bar', component: Bar },
         { path: '/hello', name: 'hello', component: require("./hello.vue"), props: { name: 'Can PERK', initialEnthusiasm: 1 } },
-        { path: '/newTemplate', name: 'newTemplate', component: require("./newTemplate.vue"), props: { title: 'Create Template' } }
+        { path: '/newTemplate', name: 'newTemplate', component: require("./create/newTemplate.vue"), props: { title: 'Create Template' } }
     ]
 })
 new Vue({

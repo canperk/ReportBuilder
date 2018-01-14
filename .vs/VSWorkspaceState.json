@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ReportBuilder",
+    "\\ReportBuilder\\src",
+    "\\ReportBuilder\\src\\create",
+    "\\ReportBuilder\\wwwroot",
+    "\\ReportBuilder\\wwwroot\\dist",
+    "\\ReportBuilder\\wwwroot\\js"
+  ],
+  "SelectedNode": "\\ReportBuilder\\src\\create\\ribbon.vue",
+  "PreviewInSolutionExplorer": false
+}

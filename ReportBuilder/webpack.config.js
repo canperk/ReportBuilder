@@ -3,7 +3,7 @@ var webpack = require('webpack')
 
 module.exports = {
     entry: {
-        main: './src/index.ts'
+        main: './src/index.ts',
     },
     output: {
         path: path.resolve(__dirname, './wwwroot/dist'),
@@ -42,7 +42,8 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.js', '.vue', '.json'],
         alias: {
-            'vue$': 'vue/dist/vue.esm.js'
+            'vue$': 'vue/dist/vue.esm.js',
+            'ec' : "../wwwroot/js/site.js"
         }
     },
     devtool: '#eval-source-map',
@@ -51,7 +52,8 @@ module.exports = {
             $: 'jquery',
             jquery: 'jquery',
             'window.jQuery': 'jquery',
-            jQuery: 'jquery'
+            jQuery: 'jquery',
+            'ec': 'ec'
         })
     ]
 }
