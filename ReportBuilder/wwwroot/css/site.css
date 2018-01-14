@@ -9,7 +9,7 @@ html, body {
 body {
     min-width: 1024px;
     overflow-y: auto;
-    min-height: 800px;
+    min-height: 768px;
     font-family: 'Segoe UI';
     background-color: #EAEBED;
     color: #FFF;
