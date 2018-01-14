@@ -3,5 +3,8 @@ declare global  {
         $: any;
         jQuery: any;
     }
+    interface JQuery {
+        ribbon(): void;
+    }
 }
 export {};

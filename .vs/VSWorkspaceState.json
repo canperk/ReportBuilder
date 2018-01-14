@@ -4,10 +4,13 @@
     "\\ReportBuilder",
     "\\ReportBuilder\\src",
     "\\ReportBuilder\\src\\create",
+    "\\ReportBuilder\\Views",
+    "\\ReportBuilder\\Views\\Shared",
     "\\ReportBuilder\\wwwroot",
+    "\\ReportBuilder\\wwwroot\\css",
     "\\ReportBuilder\\wwwroot\\dist",
-    "\\ReportBuilder\\wwwroot\\js"
+    "\\ReportBuilder\\wwwroot\\dist\\ts"
   ],
-  "SelectedNode": "\\ReportBuilder\\src\\create\\ribbon.vue",
+  "SelectedNode": "\\ReportBuilder\\wwwroot\\css\\site.css",
   "PreviewInSolutionExplorer": false
 }
