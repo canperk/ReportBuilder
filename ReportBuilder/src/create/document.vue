@@ -1,7 +1,7 @@
 ﻿<template>
     <div class="documentContainer">
         <h3>Document</h3>
-        <span>{{number}}</span>
+        <span>{{count}}</span>
     </div>
 </template>
 
@@ -10,6 +10,6 @@
     import { Component, Prop } from 'vue-property-decorator';
     @Component
     export default class Document extends Vue {
-        public number: number = 0;
+        public count: number = 0;
     }
 </script>

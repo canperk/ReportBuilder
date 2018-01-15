@@ -1,8 +1,7 @@
 import Vue from "vue";
-import Document from "./document.vue";
 export default class Ribbon extends Vue {
-    documentContainer: Document;
-    document: Document;
+    constructor();
+    added: void;
+    removed: void;
     mounted(): void;
-    add(): void;
 }

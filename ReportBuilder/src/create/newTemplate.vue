@@ -1,14 +1,14 @@
 ﻿<template>
     <div class="pageContainer">
         <div class="mainProperties">
-            <ribbon name="rbn" :documentContainer="Document"></ribbon>
+            <ribbon v-bind="{added, removed}"></ribbon>
         </div>
         <div class="rulerContainer">
         </div>
         <div class="workPanel">
             <div class="panelTitle"></div>
             <div class="panelContent">
-                <document></document>
+                <document ref="doc"></document>
             </div>
         </div>
     </div>
@@ -20,11 +20,24 @@
     import Document from "./document.vue";
     import Ribbon from "./ribbon.vue";
 
-    Vue.component('ribbon', Ribbon);
-    Vue.component('document', Document);
-
-    @Component
+    @Component({
+        components: {
+            Ribbon,
+            Document
+        }
+    })
     export default class NewTemplate extends Vue {
+        added = (): void => {
+            this.$refs.doc.count++;
+        }
+
+        removed = (): void => {
+            this.$refs.doc.count--;
+        }
+
+        $refs: {
+            doc: Document
+        }
     }
 </script>
 <style>

@@ -5,10 +5,10 @@
             <span class="ribbon-title">Main</span>
             <div class="ribbon-section">
                 <span class="section-title">Users</span>
-                <div class="ribbon-button ribbon-button-large" @click="add">
+                <div class="ribbon-button ribbon-button-large" @click="added">
                     <i class="fa fa-pencil"></i> <span class="button-title">Add</span>
                 </div>
-                <div class="ribbon-button ribbon-button-large">
+                <div class="ribbon-button ribbon-button-large" @click="removed">
                     <i class="fa fa-pencil"></i> <span class="button-title">Search</span>
                 </div>
             </div>
@@ -92,20 +92,21 @@
 
 <script lang="ts">
     import Vue from "vue";
-    import Document from "./document.vue";
     import { Component, Prop } from 'vue-property-decorator';
     require("../../wwwroot/js/site.js");
+    import Document from "./document.vue";
+
+
     @Component
     export default class Ribbon extends Vue {
-        @Prop() documentContainer: Document;
+        constructor() {
+            super();
+        }
+        @Prop() added: void;
+        @Prop() removed: void;
 
-        document: Document = this.documentContainer;
         mounted(): void {
             $("#ribbon").ribbon();
-        }
-
-        add(): void {
-            console.log(this.document);
         }
     }
 </script>
