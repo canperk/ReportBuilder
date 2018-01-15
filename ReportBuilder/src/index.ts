@@ -22,7 +22,7 @@ const router = new VueRouter({
         { path: '/', name: 'home', component: Home },
         { path: '/bar/:id', name: 'bar', component: Bar },
         { path: '/hello', name: 'hello', component: require("./hello.vue"), props: { name: 'Can PERK', initialEnthusiasm: 1 } },
-        { path: '/newTemplate', name: 'newTemplate', component: require("./create/newTemplate.vue"), props: { title: 'Create Template' } }
+        { path: '/newTemplate', name: 'newTemplate', component: require("./create/newTemplate.vue") }
     ]
 })
 new Vue({

@@ -88,7 +88,7 @@ body {
             cursor: pointer;
             padding-left: 10px;
             padding-top: 10px;
-            font-size:14px;
+            font-size: 14px;
         }
 
             .navMenu .mainMenu li a {
@@ -115,6 +115,11 @@ body {
 }
 
     #content #mainContainer {
+    }
+
+    #content .workPanel {
+        position: absolute;
+        top: 140px;
     }
 
 .leftContainer {
@@ -150,6 +155,7 @@ ul.settings {
         ul.settings li:hover {
             background-color: #495461;
         }
+
 .fade-enter-active, .fade-leave-active {
     transition: opacity .5s ease;
 }
@@ -162,4 +168,3 @@ ul.settings {
     position: absolute;
     transition: all .5s cubic-bezier(.55,0,.1,1);
 }
-

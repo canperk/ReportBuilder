@@ -1581,7 +1581,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
+      "sha512": "s36A7EaRGfyY/RFwAqgqfow4hjJwT++O2NFACXLi/CIzjBaHYrqD0cMN+aULbcrjJqDFmmnNvEr3i+T9TPqnLA==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -1742,7 +1742,7 @@
       ]
     },
     "System.ComponentModel.Annotations/4.4.0": {
-      "sha512": "29K3DQ+IGU7LBaMjTo7SI7T7X/tsMtLvz1p56LJ556Iu0Dw3pKZw5g8yCYCWMRxrOF0Hr0FU0FwW0o42y2sb3A==",
+      "sha512": "GEmTQZv2wCDEMUJEgxSonzRvUNWSbb5ZYAaKYxi+vfLDQo5+xRUmdPs9omLuYkOhEukh0KbF/WGuJwErWI2UYw==",
       "type": "package",
       "path": "system.componentmodel.annotations/4.4.0",
       "files": [
@@ -2298,7 +2298,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+      "sha512": "eFtDuWFCMiVLSKj5q62qhp3vM4ywHKLVjZt9w+3FWFH7w1lFMnt07TbDWypBmFBZ5R7Iwd4rAEHMIOFlzmmveg==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
@@ -3332,7 +3332,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\canpe\\.nuget\\packages\\": {},
+    "C:\\Users\\can.perk\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3341,18 +3342,20 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\Git\\ReportBuilder.Entities\\ReportBuilder.Entities.csproj",
+      "projectUniqueName": "E:\\Git\\ReportBuilder\\ReportBuilder.Entities\\ReportBuilder.Entities.csproj",
       "projectName": "ReportBuilder.Entities",
-      "projectPath": "E:\\Git\\ReportBuilder.Entities\\ReportBuilder.Entities.csproj",
-      "packagesPath": "C:\\Users\\canpe\\.nuget\\packages\\",
-      "outputPath": "E:\\Git\\ReportBuilder.Entities\\obj\\",
+      "projectPath": "E:\\Git\\ReportBuilder\\ReportBuilder.Entities\\ReportBuilder.Entities.csproj",
+      "packagesPath": "C:\\Users\\can.perk\\.nuget\\packages\\",
+      "outputPath": "E:\\Git\\ReportBuilder\\ReportBuilder.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\canpe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\can.perk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -3377,17 +3380,17 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "2.0.1"
+            "version": "[2.0.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "2.0.1"
           }
         },
         "imports": [

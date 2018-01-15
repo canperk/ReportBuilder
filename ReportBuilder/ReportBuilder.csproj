@@ -9,9 +9,11 @@
     <TypeScriptExperimentalDecorators>True</TypeScriptExperimentalDecorators>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="src\create\document.vue" />
     <None Remove="src\index.ts" />
     <None Remove="src\newTemplate.ts" />
     <None Remove="src\templates.ts" />
+    <None Remove="src\vue.shims.d.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,7 +35,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="src\create\document.vue" />
     <TypeScriptCompile Include="src\index.ts" />
+    <TypeScriptCompile Include="src\vue.shims.d.ts" />
   </ItemGroup>
 
 </Project>

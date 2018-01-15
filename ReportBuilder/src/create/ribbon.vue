@@ -5,44 +5,44 @@
             <span class="ribbon-title">Main</span>
             <div class="ribbon-section">
                 <span class="section-title">Users</span>
-                <div class="ribbon-button ribbon-button-large">
-                    <i class="fa fa-pencil"></i> Add
+                <div class="ribbon-button ribbon-button-large" @click="add">
+                    <i class="fa fa-pencil"></i> <span class="button-title">Add</span>
                 </div>
                 <div class="ribbon-button ribbon-button-large">
-                    <i class="fa fa-pencil"></i> Search
+                    <i class="fa fa-pencil"></i> <span class="button-title">Search</span>
                 </div>
             </div>
             <div class="ribbon-section">
                 <span class="section-title">Clients</span>
                 <div class="ribbon-button ribbon-button-large" id="add-page-btn">
-                    <i class="fa fa-pencil"></i> Check Services
+                    <i class="fa fa-pencil"></i> <span class="button-title">Check Services</span>
                 </div>
             </div>
             <div class="ribbon-section">
                 <span class="section-title">Evidence</span>
                 <div class="ribbon-button ribbon-button-large" id="add-page-btn">
-                    <i class="fa fa-pencil"></i> Usage Data
+                    <i class="fa fa-pencil"></i> <span class="button-title">Usage Data</span>
                 </div>
             </div>
             <div class="ribbon-section">
                 <span class="section-title">Services & Fees</span>
                 <div class="ribbon-button ribbon-button-small" id="run-btn">
-                    <i class="fa fa-pencil"></i> Price
+                    <i class="fa fa-pencil"></i> <span class="button-title"> Price</span>
                 </div>
                 <div class="ribbon-button ribbon-button-small" id="repeat-btn">
-                    <i class="fa fa-pencil"></i> Promotions
+                    <i class="fa fa-pencil"></i> <span class="button-title">Promotions</span>
                 </div>
             </div>
             <div class="ribbon-section">
                 <span class="section-title">Tasks</span>
                 <div class="ribbon-button ribbon-button-small" id="run-btn">
-                    <i class="fa fa-pencil"></i> New
+                    <i class="fa fa-pencil"></i> <span class="button-title">New</span>
                 </div>
                 <div class="ribbon-button ribbon-button-small" id="repeat-btn">
-                    <i class="fa fa-pencil"></i> Assignment
+                    <i class="fa fa-pencil"></i> <span class="button-title">Assignment</span>
                 </div>
                 <div class="ribbon-button ribbon-button-small disabled" id="save-btn">
-                    <i class="fa fa-pencil"></i> Queries
+                    <i class="fa fa-pencil"></i> <span class="button-title">Queries</span>
                 </div>
             </div>
         </div>
@@ -92,12 +92,20 @@
 
 <script lang="ts">
     import Vue from "vue";
+    import Document from "./document.vue";
     import { Component, Prop } from 'vue-property-decorator';
     require("../../wwwroot/js/site.js");
     @Component
     export default class Ribbon extends Vue {
+        @Prop() documentContainer: Document;
+
+        document: Document = this.documentContainer;
         mounted(): void {
-            $("#ribbon").ribbon()
+            $("#ribbon").ribbon();
+        }
+
+        add(): void {
+            console.log(this.document);
         }
     }
 </script>
