@@ -47,16 +47,16 @@
             </div>
         </div>
         <div class="ribbon-tab" id="reports-tab">
-            <span class="ribbon-title">Reports</span>
+            <span class="ribbon-title">Work Area</span>
             <div class="ribbon-section">
-                <span class="section-title">More Stuff</span>
-                <div class="ribbon-button ribbon-button-large">
-                    <span class="button-title">Other<br />Feature</span>
+                <span class="section-title">Header and Footer</span>
+                <div class="ribbon-button ribbon-button-large" @click="toggleHeader">
+                    <span class="button-title">Toggle<br />Header</span>
                     <span class="button-help">This button will do something else.</span>
                     <i class="fa fa-pencil"></i>
                 </div>
-                <div class="ribbon-button ribbon-button-large disabled" id="other-btn-2">
-                    <span class="button-title">Remove<br />Table</span>
+                <div class="ribbon-button ribbon-button-large <!--disabled-->" @click="toggleFooter">
+                    <span class="button-title">Toggle<br />Footer</span>
                     <span class="button-help">This button will remove the selected table from your document.</span>
                     <i class="fa fa-pencil"></i>
                 </div>
@@ -102,6 +102,8 @@
         }
         @Prop() added: void;
         @Prop() removed: void;
+        @Prop() toggleHeader: void;
+        @Prop() toggleFooter: void;
 
         mounted(): void {
             $("#ribbon").ribbon();
