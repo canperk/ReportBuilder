@@ -321,7 +321,19 @@
         width: 200px;
         top: 150px !important;
     }
-.rulerContainer{
-    position:absolute;
-    top:150px;
+.rulerContainer {
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    bottom: 10px;
+    width: 190mm;
+    height: 290mm;
+}
+.rulerContainer .documentContainer {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    bottom: 25px;
+    right: 10px;
+    background-color: #FFF;
 }

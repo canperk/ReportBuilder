@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Init from "./site";
+Init.start();
 window.$ = window.jQuery = require("jquery");
-window.$.fn.ribbon = undefined;
 Vue.use(VueRouter);
 var Home = { template: '<div>This is Home</div>' };
 var Bar = { template: '<div>This is Bar {{ $route.params.id }}</div>' };

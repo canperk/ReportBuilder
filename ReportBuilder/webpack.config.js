@@ -1,9 +1,14 @@
-﻿var path = require('path')
-var webpack = require('webpack')
+﻿var path = require('path');
+var webpack = require('webpack');
+var exec = require('script-loader');
 
+var publicFiles = [
+    "./wwwroot/js/ruler.min.js",
+    "./wwwroot/js/site.js"
+];
 module.exports = {
     entry: {
-        main: './src/index.ts',
+        main: './src/index.ts'
     },
     output: {
         path: path.resolve(__dirname, './wwwroot/dist'),
@@ -36,6 +41,10 @@ module.exports = {
                 options: {
                     name: '[name].[ext]?[hash]'
                 }
+            },
+            {
+                test: /\.exec\.js$/,
+                use: ['script-loader']
             }
         ]
     },
@@ -43,7 +52,6 @@ module.exports = {
         extensions: ['.ts', '.js', '.vue', '.json'],
         alias: {
             'vue$': 'vue/dist/vue.esm.js',
-            'ec' : "../wwwroot/js/site.js"
         }
     },
     devtool: '#eval-source-map',
@@ -52,8 +60,7 @@ module.exports = {
             $: 'jquery',
             jquery: 'jquery',
             'window.jQuery': 'jquery',
-            jQuery: 'jquery',
-            'ec': 'ec'
+            jQuery: 'jquery'
         })
     ]
 }

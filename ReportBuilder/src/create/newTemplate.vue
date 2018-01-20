@@ -4,11 +4,12 @@
             <ribbon v-bind="{added, removed}"></ribbon>
         </div>
         <div class="rulerContainer">
+            <document ref="doc"></document>
         </div>
         <div class="workPanel">
             <div class="panelTitle"></div>
             <div class="panelContent">
-                <document ref="doc"></document>
+                
             </div>
         </div>
     </div>
@@ -19,7 +20,7 @@
     import { Component, Prop } from 'vue-property-decorator';
     import Document from "./document.vue";
     import Ribbon from "./ribbon.vue";
-
+    require("../../wwwroot/dist/site")
     @Component({
         components: {
             Ribbon,
@@ -27,6 +28,9 @@
         }
     })
     export default class NewTemplate extends Vue {
+        mounted(): void {
+            $("body").createRuler();
+        }
         added = (): void => {
             this.$refs.doc.count++;
         }
@@ -41,5 +45,6 @@
     }
 </script>
 <style>
+    @import url('../../wwwroot/css/ruler.min.css');
     @import url('../../wwwroot/css/newTemplate.css');
 </style>

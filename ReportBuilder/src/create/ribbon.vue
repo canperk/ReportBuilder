@@ -93,9 +93,7 @@
 <script lang="ts">
     import Vue from "vue";
     import { Component, Prop } from 'vue-property-decorator';
-    require("../../wwwroot/js/site.js");
     import Document from "./document.vue";
-
 
     @Component
     export default class Ribbon extends Vue {

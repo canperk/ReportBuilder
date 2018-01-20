@@ -1,18 +1,8 @@
 ﻿import Vue from 'vue'
 import VueRouter from 'vue-router'
-
-declare global {
-    interface Window {
-        $: any;
-        jQuery: any;
-    }
-    interface JQuery {
-        ribbon(): void;
-    }
-}
-
+import Init from "./site"
+Init.start();
 window.$ = window.jQuery = require("jquery");
-window.$.fn.ribbon = undefined;
 Vue.use(VueRouter)
 const Home = { template: '<div>This is Home</div>' }
 const Bar = { template: '<div>This is Bar {{ $route.params.id }}</div>' }
