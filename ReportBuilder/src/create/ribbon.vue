@@ -2,89 +2,92 @@
     <div id="ribbon">
         <div class="ribbon-window-title"></div>
         <div class="ribbon-tab" id="format-tab">
-            <span class="ribbon-title">Main</span>
+            <span class="ribbon-title">Components</span>
             <div class="ribbon-section">
-                <span class="section-title">Users</span>
-                <div class="ribbon-button ribbon-button-large" @click="added">
-                    <i class="fa fa-pencil"></i> <span class="button-title">Add</span>
-                </div>
-                <div class="ribbon-button ribbon-button-large" @click="removed">
-                    <i class="fa fa-pencil"></i> <span class="button-title">Search</span>
-                </div>
+                <span class="section-title">Text</span>
+                <button class="ribbon-button ribbon-button-large" @click="added">
+                    <i class="fa fa-header"></i> <span class="button-title">Header</span>
+                </button>
+                <button class="ribbon-button ribbon-button-large" @click="removed">
+                    <i class="fa fa-paragraph"></i> <span class="button-title">Text</span>
+                </button>
             </div>
             <div class="ribbon-section">
-                <span class="section-title">Clients</span>
-                <div class="ribbon-button ribbon-button-large" id="add-page-btn">
-                    <i class="fa fa-pencil"></i> <span class="button-title">Check Services</span>
-                </div>
+                <span class="section-title">Image</span>
+                <button class="ribbon-button ribbon-button-large" id="add-page-btn">
+                    <i class="fa fa-picture-o"></i> <span class="button-title">Image</span>
+                </button>
             </div>
             <div class="ribbon-section">
-                <span class="section-title">Evidence</span>
-                <div class="ribbon-button ribbon-button-large" id="add-page-btn">
-                    <i class="fa fa-pencil"></i> <span class="button-title">Usage Data</span>
-                </div>
+                <span class="section-title">Multidata</span>
+                <button class="ribbon-button ribbon-button-large" id="add-page-btn">
+                    <i class="fa fa-table"></i> <span class="button-title">Table</span>
+                </button>
             </div>
             <div class="ribbon-section">
-                <span class="section-title">Services & Fees</span>
-                <div class="ribbon-button ribbon-button-small" id="run-btn">
-                    <i class="fa fa-pencil"></i> <span class="button-title"> Price</span>
-                </div>
-                <div class="ribbon-button ribbon-button-small" id="repeat-btn">
-                    <i class="fa fa-pencil"></i> <span class="button-title">Promotions</span>
-                </div>
+                <span class="section-title">Simple Components</span>
+                <button class="ribbon-button ribbon-button-large" id="run-btn">
+                    <i class="fa fa-asterisk"></i> <span class="button-title">Bound Object</span>
+                </button>
+                <button class="ribbon-button ribbon-button-large" id="repeat-btn">
+                    <i class="fa fa-anchor"></i> <span class="button-title">Link</span>
+                </button>
+                <button class="ribbon-button ribbon-button-large" id="repeat-btn">
+                    <i class="fa fa-sum"></i> <span class="button-title">Aggreagate</span>
+                </button>
             </div>
             <div class="ribbon-section">
                 <span class="section-title">Tasks</span>
-                <div class="ribbon-button ribbon-button-small" id="run-btn">
+                <button class="ribbon-button ribbon-button-small" id="run-btn">
                     <i class="fa fa-pencil"></i> <span class="button-title">New</span>
-                </div>
-                <div class="ribbon-button ribbon-button-small" id="repeat-btn">
+                </button>
+                <button class="ribbon-button ribbon-button-small" id="repeat-btn">
                     <i class="fa fa-pencil"></i> <span class="button-title">Assignment</span>
-                </div>
-                <div class="ribbon-button ribbon-button-small disabled" id="save-btn">
+                </button>
+                <button class="ribbon-button ribbon-button-small disabled" id="save-btn">
                     <i class="fa fa-pencil"></i> <span class="button-title">Queries</span>
-                </div>
+                </button>
             </div>
         </div>
         <div class="ribbon-tab" id="reports-tab">
             <span class="ribbon-title">Work Area</span>
             <div class="ribbon-section">
                 <span class="section-title">Header and Footer</span>
-                <div class="ribbon-button ribbon-button-large" @click="toggleHeader">
+                <button class="ribbon-button ribbon-button-large" @click="toggleHeader">
                     <span class="button-title">Toggle<br />Header</span>
                     <span class="button-help">This button will do something else.</span>
-                    <i class="fa fa-pencil"></i>
-                </div>
-                <div class="ribbon-button ribbon-button-large <!--disabled-->" @click="toggleFooter">
+                    <i class="fa fa-chevron-up"></i>
+                </button>
+                <button class="ribbon-button ribbon-button-large <!--disabled-->" @click="toggleFooter">
                     <span class="button-title">Toggle<br />Footer</span>
                     <span class="button-help">This button will remove the selected table from your document.</span>
-                    <i class="fa fa-pencil"></i>
-                </div>
+                    <i class="fa fa-chevron-down"></i>
+                </button>
             </div>
         </div>
         <div class="ribbon-tab" id="client-tab">
-            <span class="ribbon-title">Client</span>
+            <span class="ribbon-title">Connection</span>
             <div class="ribbon-section">
                 <span class="section-title">New</span>
                 <span class="section-title"></span>
-                <div class="ribbon-button ribbon-button-large">
-                    <span class="button-title">Add<br />Client</span>
+                <button class="ribbon-button ribbon-button-large">
+                    <span class="button-title">Add<br />Connection</span>
                     <span class="button-help">This button will do something else.</span>
-                    <i class="fa fa-pencil"></i>
-                </div>
+                    <i class="fa fa-plug"></i>
+                </button>
             </div>
             <div class="ribbon-section">
-                <span class="section-title">Clients</span>
-                <div class="ribbon-button ribbon-button-small" id="run-btn">
-                    <span class="button-title">Import Clients</span>
+                <span class="section-title">Data</span>
+                <button class="ribbon-button ribbon-button-small" id="run-btn">
+                    <span class="button-title">View Data</span>
                     <span class="button-help">This button will run the program.</span>
-                    <i class="fa fa-pencil"></i>
-                </div>
-                <div class="ribbon-button ribbon-button-small" id="repeat-btn">
-                    <span class="button-title">Export Clients</span>
+                    <i class="fa fa-list"></i>
+                </button>
+                <button class="ribbon-button ribbon-button-small" id="repeat-btn">
+                    <span class="button-title">Show Data Source</span>
                     <span class="button-help">This button will repeat something.</span>
-                    <i class="fa fa-pencil"></i>
-                </div>
+                    <i class="fa fa-link"></i>
+                </button>
             </div>
         </div>
     </div>

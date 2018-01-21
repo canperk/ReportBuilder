@@ -20,9 +20,9 @@
     box-shadow: #8b9097 0px 1px 3px;
     overflow: hidden;
     z-index: 1050;
-    position: fixed;
-    top: 30px;
-    left: 200px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     right: 0;
     height: 135px;
     min-width: 768px;
@@ -162,9 +162,10 @@
         clear: left;
         display: block;
         position: absolute;
-        bottom: 0;
+        bottom: -5px;
         left: 0;
         right: 0;
+        font-weight: bold;
     }
 
     #ribbon .ribbon-section {
@@ -191,15 +192,26 @@
         border-radius: 3px 3px 3px 3px;
     }
 
+    #ribbon button{
+        font-size:8pt;
+        background-color: transparent;
+        display:block;
+    }
+
+    #ribbon button.ribbon-button:focus {
+        outline: none;
+    }
+
     #ribbon .ribbon-button-large {
         text-align: center;
         height: 58px;
         min-width: 44px;
         float: left;
+        background-color: transparent;
     }
 
     #ribbon .ribbon-button-small {
-        height: 14px;
+        height: 20px;
         padding: 3px 4px;
         text-align: left;
     }
@@ -293,34 +305,38 @@
     #ribbon .ribbon-button.disabled .button-title {
         color: #888;
     }
+
     #ribbon .ribbon-button-small .fa {
-        margin-right:5px;
+        margin-right: 5px;
     }
+
     #ribbon .ribbon-button-large .fa {
-        display:block;
-        margin-bottom:10px;
+        display: block;
+        margin-bottom: 10px;
         font-size: 20px;
     }
-    .ribbon-tooltip {
-        font-family: "Segoe UI";
-        font-size: 10pt;
-        position: fixed;
-        z-index: 5000;
-        border: 1px solid #8b9097;
-        background-color: #e5e5f0;
-        background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#e5e5f0));
-        background: -moz-linear-gradient(#ffffff, #e5e5f0);
-        -pie-background: linear-gradient(#ffffff, #e5e5f0);
-        padding: 5px;
-        -webkit-box-shadow: #c6c9cd 1px 1px 3px;
-        -moz-box-shadow: #c6c9cd 1px 1px 3px;
-        box-shadow: #c6c9cd 1px 1px 3px;
-        -webkit-border-radius: 2px 2px 2px 2px;
-        -moz-border-radius: 2px 2px 2px 2px;
-        border-radius: 2px 2px 2px 2px;
-        width: 200px;
-        top: 150px !important;
-    }
+
+.ribbon-tooltip {
+    font-family: "Segoe UI";
+    font-size: 10pt;
+    position: fixed;
+    z-index: 5000;
+    border: 1px solid #8b9097;
+    background-color: #e5e5f0;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#e5e5f0));
+    background: -moz-linear-gradient(#ffffff, #e5e5f0);
+    -pie-background: linear-gradient(#ffffff, #e5e5f0);
+    padding: 5px;
+    -webkit-box-shadow: #c6c9cd 1px 1px 3px;
+    -moz-box-shadow: #c6c9cd 1px 1px 3px;
+    box-shadow: #c6c9cd 1px 1px 3px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+    width: 200px;
+    top: 150px !important;
+}
+
 .rulerContainer {
     position: absolute;
     top: 150px;
@@ -329,51 +345,58 @@
     width: 190mm;
     height: 290mm;
 }
-.rulerContainer .documentContainer {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    margin-bottom: 75px;
-    bottom: 0px;
-    right: 10px;
-    background-color: #FFF;
-}
 
-.rulerContainer .documentContainer .docHeader{
-    height:20mm;
-    background-color:#4488e5;
-    position:absolute;
-    top:0px;
-    left:0px;
-    right:0px;
-}
-.rulerContainer .documentContainer .docFooter{
-    height:20mm;
-    background-color:#4488e5;
-    position:absolute;
-    left:0px;
-    right:0px;
-    bottom:0px;
-}
-.rulerContainer .documentContainer .docContent{
-    position:absolute;
-    top:20mm;
-}
+    .rulerContainer .documentContainer {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        margin-bottom: 75px;
+        bottom: 0px;
+        right: 10px;
+        background-color: #FFF;
+    }
+
+        .rulerContainer .documentContainer .docHeader {
+            height: 20mm;
+            background-color: #4488e5;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+
+        .rulerContainer .documentContainer .docFooter {
+            height: 20mm;
+            background-color: #4488e5;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .rulerContainer .documentContainer .docContent {
+            position: absolute;
+            top: 20mm;
+        }
+
 .properties {
-    position: fixed;
-    top: 31px;
+    position: absolute;
+    top: 0px;
     right: 0px;
     width: 400px;
     bottom: 60px;
-    background-color: #FFF;
+    background-color: #eaebed;
     z-index: 10100;
+    height: 890px;
+    border: 1px solid #71b1d1;
 }
+
 .widget .widgetHeader {
     height: 25px;
     background-color: #3c454f;
 }
 
-.widget .widgetHeader span.title{
-    margin-left:10px;
-    color:#FFF;
-}
+    .widget .widgetHeader span.title {
+        margin-left: 10px;
+        color: #FFF;
+    }
