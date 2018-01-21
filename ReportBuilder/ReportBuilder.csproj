@@ -9,7 +9,13 @@
     <TypeScriptExperimentalDecorators>True</TypeScriptExperimentalDecorators>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="src\components\enums.ts" />
+    <None Remove="src\components\header.ts" />
+    <None Remove="src\components\link.ts" />
+    <None Remove="src\components\text.ts" />
+    <None Remove="src\components\TextControls.ts" />
     <None Remove="src\create\document.vue" />
+    <None Remove="src\helpers\Helpers.ts" />
     <None Remove="src\index.ts" />
     <None Remove="src\newTemplate.ts" />
     <None Remove="src\templates.ts" />
@@ -36,7 +42,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="src\components\Enums.ts" />
+    <TypeScriptCompile Include="src\components\Header.ts" />
+    <TypeScriptCompile Include="src\components\Link.ts" />
+    <TypeScriptCompile Include="src\components\Text.ts" />
+    <TypeScriptCompile Include="src\components\TextControls.ts" />
     <TypeScriptCompile Include="src\create\document.vue" />
+    <TypeScriptCompile Include="src\helpers\Helpers.ts" />
     <TypeScriptCompile Include="src\index.ts" />
     <TypeScriptCompile Include="src\typings.d.ts" />
     <TypeScriptCompile Include="src\vue.shims.d.ts" />

@@ -21,7 +21,7 @@ new Vue({
      <div class="navMenu">
         <ul class="mainMenu">
             <li>
-                <router-link :to="{ name: 'home' }"><i class="fa fa-pencil-square-o"></i>Templates</router-link>
+                <router-link :to="{ name: 'home' }"><i class="fa fa-home"></i>Home</router-link>
             </li>
             <li>
                 <router-link :to="{ name: 'hello' }"><i class="fa fa-database"></i>Data Sources</router-link>
@@ -30,7 +30,7 @@ new Vue({
                 <router-link :to="{ name: 'bar', params: { id: 123 } }"><i class="fa fa-download"></i>Downloads</router-link>
             </li>
             <li>
-                <router-link :to="{ name: 'newTemplate' }"><i class="fa fa-wrench"></i>Preferences</router-link>
+                <router-link :to="{ name: 'newTemplate' }"><i class="fa fa-plus"></i>Create Template</router-link>
             </li>
         </ul>
     </div>
