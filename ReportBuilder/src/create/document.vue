@@ -12,10 +12,15 @@
 <script lang="ts">
     import Vue from "vue";
     import { Component, Prop } from 'vue-property-decorator';
+    import { ComponentBase } from "../components/TextControls"
     @Component
     export default class Document extends Vue {
         public count: number = 0;
         public showHeader: Boolean = true;
         public showFooter: Boolean = true;
+
+        create<T>(type: (new () => T)): void {
+            console.log(new type());
+        }
     }
 </script>

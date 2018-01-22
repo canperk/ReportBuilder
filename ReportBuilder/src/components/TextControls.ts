@@ -1,8 +1,8 @@
-﻿import Color from "./enums"
-import { Guid } from "../helpers/helpers"
+﻿import { Enums } from "./Enums"
+import { Helper } from "../helpers/helpers"
 class ComponentBase {
     constructor() {
-        this.id = Guid.newGuid();
+        this.id = Helper.Guid.newGuid();
         this.left = 100;
         this.top = 100;
     }
@@ -13,9 +13,16 @@ class ComponentBase {
 class TextBase extends ComponentBase {
     constructor() {
         super();
-        this.textColor = Color.Black;
+        this.textColor = Enums.Color.Black;
+        this.fontFamily = Helper.Constants.defautlFontFamily;
+        this.fontSize = Helper.Constants.defaultFontSize;
+        this.textAlign = Enums.TextAlign.Left;
     }
-    public textColor: Color;
-    public fontSize: number;
+    public textColor: Enums.Color;
+    public fontSize: string;
     public fontFamily: string;
+    public textAlign: string;
+    public content: string;
 }
+
+export { ComponentBase, TextBase }

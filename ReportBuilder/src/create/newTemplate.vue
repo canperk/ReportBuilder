@@ -16,6 +16,8 @@
     import Document from "./document.vue";
     import Ribbon from "./ribbon.vue";
     import Properties from "./properties.vue";
+    import Header from "../components/Header.vue"
+    import Link from "../components/Link"
     require("../../wwwroot/dist/site")
     @Component({
         components: {
@@ -30,10 +32,12 @@
         }
         added = (): void => {
             this.$refs.doc.count++;
+            this.$refs.doc.create(Header);
         }
 
         removed = (): void => {
             this.$refs.doc.count--;
+            this.$refs.doc.create(Link);
         }
 
         toggleHeader = (): void => {
