@@ -16,11 +16,13 @@
     @Component
     export default class Document extends Vue {
         public count: number = 0;
-        public showHeader: Boolean = true;
+        public showHeader: Boolean = true; 
         public showFooter: Boolean = true;
+        public items: Array<any> = [];
 
         create<T>(type: (new () => T)): void {
-            console.log(new type());
+            let t = new type();
+            this.items.push(t);
         }
     }
 </script>

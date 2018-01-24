@@ -11,7 +11,6 @@
   <ItemGroup>
     <None Remove="src\components\enums.ts" />
     <None Remove="src\components\Header.vue" />
-    <None Remove="src\components\link.ts" />
     <None Remove="src\components\text.ts" />
     <None Remove="src\components\TextControls.ts" />
     <None Remove="src\create\document.vue" />
@@ -44,7 +43,6 @@
   <ItemGroup>
     <TypeScriptCompile Include="src\components\Enums.ts" />
     <TypeScriptCompile Include="src\components\Header.vue" />
-    <TypeScriptCompile Include="src\components\Link.ts" />
     <TypeScriptCompile Include="src\components\Text.ts" />
     <TypeScriptCompile Include="src\components\TextControls.ts" />
     <TypeScriptCompile Include="src\create\document.vue" />

@@ -1,6 +1,5 @@
 ﻿var path = require('path');
 var webpack = require('webpack');
-var exec = require('script-loader');
 
 var publicFiles = [
     "./wwwroot/js/ruler.min.js",
@@ -41,10 +40,6 @@ module.exports = {
                 options: {
                     name: '[name].[ext]?[hash]'
                 }
-            },
-            {
-                test: /\.exec\.js$/,
-                use: ['script-loader']
             }
         ]
     },

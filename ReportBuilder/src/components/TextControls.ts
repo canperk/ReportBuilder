@@ -1,12 +1,15 @@
 ﻿import { Enums } from "./Enums"
 import { Helper } from "../helpers/helpers"
-class ComponentBase {
+import Vue from "vue";
+class ComponentBase extends Vue  {
     constructor() {
+        super();
         this.id = Helper.Guid.newGuid();
         this.left = 100;
         this.top = 100;
     }
     public id: string;
+    public type: string;
     public left: number;
     public top: number;
 }
