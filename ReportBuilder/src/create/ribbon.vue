@@ -5,10 +5,10 @@
             <span class="ribbon-title">Components</span>
             <div class="ribbon-section">
                 <span class="section-title">Text</span>
-                <button class="ribbon-button ribbon-button-large" @click="added">
+                <button class="ribbon-button ribbon-button-large" @click="addHeader">
                     <i class="fa fa-header"></i> <span class="button-title">Header</span>
                 </button>
-                <button class="ribbon-button ribbon-button-large" @click="removed">
+                <button class="ribbon-button ribbon-button-large" @click="addText">
                     <i class="fa fa-paragraph"></i> <span class="button-title">Text</span>
                 </button>
             </div>
@@ -20,7 +20,7 @@
             </div>
             <div class="ribbon-section">
                 <span class="section-title">Multidata</span>
-                <button class="ribbon-button ribbon-button-large" id="add-page-btn">
+                <button class="ribbon-button ribbon-button-large" @click="addTable">
                     <i class="fa fa-table"></i> <span class="button-title">Table</span>
                 </button>
             </div>
@@ -29,7 +29,7 @@
                 <button class="ribbon-button ribbon-button-large" id="run-btn">
                     <i class="fa fa-asterisk"></i> <span class="button-title">Bound Object</span>
                 </button>
-                <button class="ribbon-button ribbon-button-large" id="repeat-btn">
+                <button class="ribbon-button ribbon-button-large" @click="addLink">
                     <i class="fa fa-anchor"></i> <span class="button-title">Link</span>
                 </button>
                 <button class="ribbon-button ribbon-button-large" id="repeat-btn">
@@ -103,8 +103,9 @@
         constructor() {
             super();
         }
-        @Prop() added: void;
-        @Prop() removed: void;
+        @Prop() addHeader: void;
+        @Prop() addLink: void;
+        @Prop() addTable: void;
         @Prop() toggleHeader: void;
         @Prop() toggleFooter: void;
 

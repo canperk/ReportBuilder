@@ -2,8 +2,9 @@
     <div class="documentContainer">
         <div class="docHeader" v-if="showHeader"></div>
         <div class="docContent">
-            <h3>Document</h3>
-            <span>{{count}}</span>
+            <div v-for="c in components" class="component">
+                <component v-bind:is="c.type"></component>
+            </div>
         </div>
         <div class="docFooter" v-if="showFooter"></div>
     </div>
@@ -13,16 +14,24 @@
     import Vue from "vue";
     import { Component, Prop } from 'vue-property-decorator';
     import { ComponentBase } from "../components/TextControls"
-    @Component
+    import ReportHeader from "../components/Header.vue"
+    import ReportLink from "../components/Link.vue"
+    import ReportTable from "../components/ReportTable.vue"
+    @Component({
+        components: {
+            ReportLink,
+            ReportHeader,
+            ReportTable
+        }
+    })
     export default class Document extends Vue {
-        public count: number = 0;
-        public showHeader: Boolean = true; 
-        public showFooter: Boolean = true;
-        public items: Array<any> = [];
+        public showHeader: Boolean = false; 
+        public showFooter: Boolean = false;
+        public components: Array<any> = [];
 
         create<T>(type: (new () => T)): void {
             let t = new type();
-            this.items.push(t);
+            this.components.push(t);
         }
     }
 </script>

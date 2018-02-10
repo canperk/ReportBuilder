@@ -1,7 +1,7 @@
 ﻿<template>
     <div class="pageContainer">
         <div class="mainProperties">
-            <ribbon v-bind="{added, removed, toggleHeader, toggleFooter}"></ribbon>
+            <ribbon v-bind="{addHeader, addLink, addTable, toggleHeader, toggleFooter}"></ribbon>
         </div>
         <div class="rulerContainer">
             <document ref="doc"></document>
@@ -16,8 +16,9 @@
     import Document from "./document.vue";
     import Ribbon from "./ribbon.vue";
     import Properties from "./properties.vue";
-    import Header from "../components/Header.vue"
-    import Link from "../components/Link.vue"
+    import ReportHeader from "../components/Header.vue"
+    import ReportLink from "../components/Link.vue"
+    import ReportTable from "../components/ReportTable.vue"
     require("../../wwwroot/dist/site")
     @Component({
         components: {
@@ -30,14 +31,16 @@
         mounted(): void {
             $("body").createRuler();
         }
-        added = (): void => {
-            this.$refs.doc.count++;
-            //this.$refs.doc.create(Header);
+        addHeader = (): void => {
+            this.$refs.doc.create(ReportHeader);
         }
 
-        removed = (): void => {
-            this.$refs.doc.count--;
-            //this.$refs.doc.create(Link);
+        addLink = (): void => {
+            this.$refs.doc.create(ReportLink);
+        }
+
+        addTable = (): void => {
+            this.$refs.doc.create(ReportTable);
         }
 
         toggleHeader = (): void => {

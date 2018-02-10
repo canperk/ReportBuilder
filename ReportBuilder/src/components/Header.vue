@@ -10,10 +10,10 @@
     import { Component, Prop } from 'vue-property-decorator';
 
     @Component
-    export default class Header extends TextBase {
+    export default class ReportHeader extends TextBase {
         constructor() {
             super();
-            this.type = "header";
+            this.type = "reportHeader";
             this.content = "Add Header Here";
             this.textAlign = Enums.TextAlign.Center;
         }
