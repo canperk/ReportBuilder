@@ -8,6 +8,8 @@ class ComponentBase extends Vue  {
         this.left = 100;
         this.top = 100;
         this.isSelected = false;
+
+        
     }
     public id: string;
     public type: string;
@@ -19,8 +21,8 @@ class ComponentBase extends Vue  {
 
     public select = () => {
         this.isSelected = true;
-        this.width++;
     }
+    
 }
 class TextBase extends ComponentBase {
     constructor() {
