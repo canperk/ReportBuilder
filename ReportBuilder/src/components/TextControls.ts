@@ -8,8 +8,6 @@ class ComponentBase extends Vue  {
         this.left = 100;
         this.top = 100;
         this.isSelected = false;
-
-        
     }
     public id: string;
     public type: string;

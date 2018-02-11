@@ -1,5 +1,5 @@
 ﻿<template>
-    <div class="rHeader selectable" v-bind:class="selectedClassName" @click="select" v-bind:style="{ left: left + 'mm', top: top + 'mm' }">
+    <div class="rHeader selectable" v-bind:class="{ selected : isSelected }" @click="select" v-bind:style="{ left: left + 'mm', top: top + 'mm' }">
         <div class="componentBody">
             {{content}}
             <div class="componentCover">

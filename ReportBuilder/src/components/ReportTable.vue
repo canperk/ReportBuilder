@@ -47,6 +47,7 @@
             this.left = 0;
             this.top = 0;
             this.width = 150;
+            this.isSelected = false;
         }
     }
 </script>
