@@ -1,6 +1,11 @@
 ﻿<template>
-    <div class="cHeader">
-        {{content}}
+    <div class="rHeader selectable" v-bind:class="selectedClassName" @click="select" v-bind:style="{ left: left + 'mm', top: top + 'mm' }">
+        <div class="componentBody">
+            {{content}}
+            <div class="componentCover">
+
+            </div>
+        </div>
     </div>
 </template>
 
@@ -16,6 +21,8 @@
             this.type = "reportHeader";
             this.content = "Add Header Here";
             this.textAlign = Enums.TextAlign.Center;
+            this.left = 30;
+            this.top = 70;
         }
     }
 </script>

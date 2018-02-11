@@ -192,15 +192,15 @@
         border-radius: 3px 3px 3px 3px;
     }
 
-    #ribbon button{
-        font-size:8pt;
+    #ribbon button {
+        font-size: 8pt;
         background-color: transparent;
-        display:block;
+        display: block;
     }
 
-    #ribbon button.ribbon-button:focus {
-        outline: none;
-    }
+        #ribbon button.ribbon-button:focus {
+            outline: none;
+        }
 
     #ribbon .ribbon-button-large {
         text-align: center;
@@ -377,6 +377,9 @@
         .rulerContainer .documentContainer .docContent {
             position: absolute;
             top: 20mm;
+            left: 10mm;
+            right: 10mm;
+            bottom: 20mm;
         }
 
 .properties {
@@ -400,3 +403,7 @@
         margin-left: 10px;
         color: #FFF;
     }
+
+.selectable{
+    position:absolute;
+}

@@ -1,7 +1,7 @@
 ﻿<template>
     <div class="pageContainer">
         <div class="mainProperties">
-            <ribbon v-bind="{addHeader, addLink, addTable, toggleHeader, toggleFooter}"></ribbon>
+            <ribbon v-bind="{addHeader, addText, addLink, addTable, toggleHeader, toggleFooter}"></ribbon>
         </div>
         <div class="rulerContainer">
             <document ref="doc"></document>
@@ -13,6 +13,7 @@
 <script lang="ts">
     import Vue from "vue";
     import { Component, Prop } from 'vue-property-decorator';
+    import { ComponentBase } from "../components/TextControls"
     import Document from "./document.vue";
     import Ribbon from "./ribbon.vue";
     import Properties from "./properties.vue";
@@ -35,6 +36,10 @@
             this.$refs.doc.create(ReportHeader);
         }
 
+        addText = (): void => {
+            this.$refs.doc.create(ReportHeader);
+        }
+
         addLink = (): void => {
             this.$refs.doc.create(ReportLink);
         }
@@ -54,6 +59,8 @@
         $refs: {
             doc: Document
         }
+
+        selectedItem: ComponentBase;
     }
 </script>
 <style>

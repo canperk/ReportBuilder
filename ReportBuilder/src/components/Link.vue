@@ -1,5 +1,7 @@
 ﻿<template>
-    <a v-bind:href="href" v-bind:target="target">Click Me!</a>
+    <div class="rLink selectable">
+        <a v-bind:href="href" v-bind:target="target">Click Me!</a>
+    </div>
 </template>
 <script lang="ts">
     import { TextBase } from "./TextControls"
@@ -10,7 +12,7 @@
     export default class ReportLink extends TextBase {
         constructor() {
             super();
-            this.href = "#";
+            this.href = "/#";
             this.target = Enums.HrefTarget.None;
             this.type = "reportLink";
         }

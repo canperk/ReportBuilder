@@ -23,6 +23,9 @@
                 <button class="ribbon-button ribbon-button-large" @click="addTable">
                     <i class="fa fa-table"></i> <span class="button-title">Table</span>
                 </button>
+                <button class="ribbon-button ribbon-button-large">
+                    <i class="fa fa-list"></i> <span class="button-title">List</span>
+                </button>
             </div>
             <div class="ribbon-section">
                 <span class="section-title">Simple Components</span>
@@ -104,6 +107,7 @@
             super();
         }
         @Prop() addHeader: void;
+        @Prop() addText: void;
         @Prop() addLink: void;
         @Prop() addTable: void;
         @Prop() toggleHeader: void;

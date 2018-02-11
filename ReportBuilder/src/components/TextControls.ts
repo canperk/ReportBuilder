@@ -7,11 +7,20 @@ class ComponentBase extends Vue  {
         this.id = Helper.Guid.newGuid();
         this.left = 100;
         this.top = 100;
+        this.isSelected = false;
     }
     public id: string;
     public type: string;
     public left: number;
     public top: number;
+    public width: number;
+    public height: number;
+    public isSelected: boolean;
+
+    public select = () => {
+        this.isSelected = true;
+        this.width++;
+    }
 }
 class TextBase extends ComponentBase {
     constructor() {
@@ -26,6 +35,8 @@ class TextBase extends ComponentBase {
     public fontFamily: string;
     public textAlign: string;
     public content: string;
+
+    
 }
 
 export { ComponentBase, TextBase }
