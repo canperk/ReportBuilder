@@ -18,15 +18,20 @@
         @Prop() name: string;
         @Prop() initialEnthusiasm: number;
 
-        increment() : void { this.enthusiasm++; }
+        increment(): void {
+            this.enthusiasm++;
+        }
+
         decrement() : void {
             if (this.enthusiasm > 1) {
                 this.enthusiasm--;
             }
         }
+
         exclamationMarks(): string {
             return Array(this.enthusiasm + 1).join('!');
         }
+
         enthusiasm: number;
     }
 </script>

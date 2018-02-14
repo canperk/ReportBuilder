@@ -1,6 +1,9 @@
 ﻿import { Enums } from "./Enums"
 import { Helper } from "../helpers/helpers"
 import Vue from "vue";
+import { Component, Prop } from 'vue-property-decorator';
+
+@Component
 class ComponentBase extends Vue  {
     constructor() {
         super();
@@ -17,10 +20,9 @@ class ComponentBase extends Vue  {
     public height: number;
     public isSelected: boolean;
 
-    public select = () => {
+    select(): void {
         this.isSelected = true;
     }
-    
 }
 class TextBase extends ComponentBase {
     constructor() {
